@@ -58,10 +58,3 @@ class CentralBank:
 
 
 
-# The Gatekeeper
-if __name__ == "__main__":
-# This code ONLY runs if you run this file directly.
-# It will NOT run when you 'from monetary_policy import CentralBank'
-    print("Running local test...")
-    test_bank = CentralBank(target=0.03)
-    test_bank.announce()
