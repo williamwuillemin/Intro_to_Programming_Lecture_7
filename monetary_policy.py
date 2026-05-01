@@ -52,4 +52,16 @@ class CentralBank:
             action = "Maintained"                               
 
         print(f"[{self.policy.upper()} BANK] Inflation: {current_inflation:.1%}, "              
-              f"Target: {self.target:.1%} -> {action}. New Rate: {self.interest_rate:.2%}")     
+              f"Target: {self.target:.1%} -> {action}. New Rate: {self.interest_rate:.2%}")   
+
+
+
+
+
+# The Gatekeeper
+if __name__ == "__main__":
+# This code ONLY runs if you run this file directly.
+# It will NOT run when you 'from monetary_policy import CentralBank'
+    print("Running local test...")
+    test_bank = CentralBank(target=0.03)
+    test_bank.announce()
